@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Maria Mikhaleva](https://up.htmlacademy.ru/htmlcss/29/user/1031959).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Суглобов](https://htmlacademy.ru/profile/id1133747).
 
 ---
 
