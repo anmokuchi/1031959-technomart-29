@@ -1,0 +1,39 @@
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --basic-lighter-grey: #EAEAEA;
+  --basic-light-grey: #E5E5E5;
+  --basic-grey: #C5C5C5;
+  --basic-dark-grey: #B5B5B5;
+  --basic-darker-grey: #A9A9A9;
+  --basic-lighter-yellow: #F9F5F0;
+  --basic-light-yellow: #F7F3EC;
+  --basic-yellow: #FFD180;
+  --basic-red: #EE3643;
+  --basic-dark-red: #CA2C37;
+  --basic-darker-red: #BA2732;
+  --basic-light-green: #5FBB2D;
+  --basic-green: #63A63E;
+  --basic-dark-green: #518534;
+  --basic-darker-green: #367315;
+  --basic-extralight-greyblue: #F1F5F7;
+  --basic-lighter-greyblue: #F2F6F8;
+  --basic-light-greyblue: #B7BFC8;
+  --basic-greyblue: #3D546F;
+  --basic-dark-greyblue: #32425C;
+  --basic-darker-greyblue: #293449;
+  --basic-extradark-greyblue: #1D2739;
+  --basic-black: #000000;
+
+  --basic-transparent-white: rgba(255, 255, 255, 0.5);
+  --basic-transparent-lightgrey: rgba(0, 0, 0, 0.0001);
+  --basic-transparent-grey: rgba(0, 0, 0, 0.24);
+
+  --special-dark-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-purple: #DC91D8;
+  --special-green: #8ED78F;
+  --special-darker-greyblue: #212A3A;
+  --special-extradark-greyblue: #161D29;
+}
