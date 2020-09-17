@@ -368,3 +368,67 @@ img {
   border: 3px solid var(--basic-dark-greyblue);
   opacity: 0.5;
 }
+
+/* Services */
+
+.services {
+  background-color: var(--basic-extralight-greyblue);
+}
+
+.services h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.service-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-greyblue);
+  border: none;
+}
+
+.service-button:hover,
+.service-button:focus {
+  background-color: var(--basic-darker-greyblue);
+  outline: none;
+}
+
+.service-button.disabled,
+.service-button:disabled {
+  background-color: var(--basic-white);
+  color: var(--basic-dark-greyblue);
+}
+
+.delivery h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark-greyblue);
+}
+
+/* Company & contacts */
+
+.index-columns h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.transport-company-item {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+}
