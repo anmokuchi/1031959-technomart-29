@@ -45,6 +45,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -58,3 +59,109 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Header */
+
+.main-header {
+  background-color: var(--basic-extralight-greyblue);
+}
+
+.main-header-about i {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.main-header-contacts {
+  text-align: center;
+}
+
+.main-header-contacts p {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  color: var(--basic-dark-greyblue);
+}
+
+.header-phone {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.authorization-container a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.authorization-container a:hover {
+  color: var(--basic-red);
+}
+
+.authorization-container a:focus,
+.authorization-container a:active {
+  outline: none;
+  color: var(--basic-grey);
+}
+
+/* Header navigation */
+
+.main-navigation {
+  background-color: var(--basic-dark-greyblue);
+}
+
+.user-navigation {
+  background-color: var(--basic-darker-greyblue);
+}
+
+.page-navigation {
+  list-style: none;
+}
+
+.user-navigation a,
+.page-navigation a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  color: var(--basic-white);
+}
+
+.page-navigation a:hover {
+  background-color: var(--basic-darker-greyblue);
+}
+
+.page-navigation a:focus,
+.page-navigation a:active {
+  outline: none;
+  background-color: var(--basic-extradark-greyblue);
+  color: var(--basic-transparent-white);
+}
+
+.order-link {
+  background-color: var(--basic-green);
+}
+
+.order-link:hover {
+  background-color: var(--basic-light-green);
+}
+
+.order-link:focus,
+.order-link:active {
+  outline: none;
+  color: var(--basic-transparent-white);
+}
+
+.bookmark-link:focus,
+.bookmark-link:active,
+.cart-link:focus,
+.cart-link:active {
+  outline: none;
+  background-color: var(--special-extradark-greyblue);
+  color: var(--basic-transparent-white);
+}
+
+
