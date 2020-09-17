@@ -26,8 +26,12 @@
   --basic-extradark-greyblue: #1D2739;
   --basic-black: #000000;
 
+  --basic-transparent-light-white: rgba(255, 255, 255, 0.3);
   --basic-transparent-white: rgba(255, 255, 255, 0.5);
-  --basic-transparent-grey: rgba(0, 0, 0, 0.24);
+  --basic-transparent-grey: rgba(197, 197, 197, 0.3);
+  --basic-transparent-darker-grey: rgba(169, 169, 169, 0.3);
+  --basic-transparent-light-black: rgba(0, 0, 0, 0.24);
+  --basic-transparent-black: rgba(0, 0, 0, 0.25);
 
   --special-dark-yellow: #FFBF47;
   --special-blue: #3BBCE3;
@@ -164,4 +168,98 @@ img {
   color: var(--basic-transparent-white);
 }
 
+/* Tag */
 
+.tag-new {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+/* Offers */
+
+.offers-list {
+  list-style: none;
+}
+
+.offer-item {
+  background-color: var(--special-dark-yellow);
+}
+
+.offer-item:nth-child(2) {
+  background-color: var(--special-blue);
+}
+
+.offer-item:nth-child(3) {
+  background-color: var(--special-purple);
+}
+
+.offer-item:nth-child(4) {
+  background-color: var(--special-green);
+}
+
+.offer-item h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+}
+
+.offer-item-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-transparent-light-white);
+}
+
+.offer-item-button:hover {
+  background-color: var(--basic-transparent-grey);
+}
+
+.offer-item-button:focus,
+.offer-item-button:active {
+  background-color: var(--basic-transparent-darker-grey);
+}
+
+/* Offers slider */
+
+.offers-slider {
+  background-color: var(--basic-grey);
+}
+
+.offers-slider-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-white);
+  background-color: var(--basic-transparent-black);
+}
+
+.offers-slider-title h4 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.offers-slider-title p {
+  font-size: 18px;
+}
+
+/* Button */
+
+.button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: none;
+}
