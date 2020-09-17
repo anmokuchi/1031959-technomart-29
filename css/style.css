@@ -39,6 +39,7 @@
   --special-green: #8ED78F;
   --special-darker-greyblue: #212A3A;
   --special-extradark-greyblue: #161D29;
+  --special-lighter-greyblue: #F3F7F9;
 }
 
 /* Global */
@@ -68,10 +69,10 @@ img {
 
 .main-header {
   background-color: var(--basic-extralight-greyblue);
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .main-header-about i {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
@@ -82,13 +83,11 @@ img {
 }
 
 .main-header-contacts p {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   color: var(--basic-dark-greyblue);
 }
 
 .header-phone {
-  font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -97,7 +96,6 @@ img {
 }
 
 .authorization-container a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -130,7 +128,6 @@ img {
 
 .user-navigation a,
 .page-navigation a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   color: var(--basic-white);
 }
@@ -431,4 +428,94 @@ img {
 .transport-company-item {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
+}
+
+/* Main footer */
+
+.main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+/* Footer info */
+
+.footer-info-container {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--special-lighter-greyblue);
+  background-color: var(--basic-dark-greyblue);
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.footer-navigation-links,
+.footer-promo-links {
+  list-style: none;
+}
+
+.footer-navigation-links a {
+  color: var(--basic-extralight-greyblue);
+}
+
+.footer-promo-links a {
+  color: var(--basic-yellow);
+}
+
+.footer-navigation-links a:hover,
+.footer-promo-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-links a:focus,
+.footer-navigation-links a:active,
+.footer-promo-links a:focus,
+.footer-promo-links a:active {
+  opacity: 0.5;
+  outline: none;
+}
+
+/* Footer copyright */
+
+.footer-copyright-container {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-darker-greyblue);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--special-darker-greyblue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red);
+}
+
+.footer-feedback a,
+.footer-developers a {
+  color: var(--basic-yellow);
+}
+
+.footer-feedback a:hover,
+.footer-developers a:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback a:focus,
+.footer-feedback a:active,
+.footer-developers a:focus,
+.footer-developers a:active {
+  color: var(--basic-red);
+  outline: none;
 }
