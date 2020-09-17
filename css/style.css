@@ -93,6 +93,7 @@ img {
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
+  border: 3px solid var(--basic-white);
 }
 
 .authorization-container a {
@@ -224,6 +225,7 @@ img {
 
 .offer-item-button:focus,
 .offer-item-button:active {
+  outline: none;
   background-color: var(--basic-transparent-darker-grey);
 }
 
@@ -262,4 +264,107 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: none;
+}
+
+.button:hover {
+  background-color: var(--basic-dark-red);
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+  background-color: var(--basic-darker-red);
+}
+
+/* Popular items & brands */
+
+.popular-items-container,
+.popular-brands-container {
+  background-color: var(--basic-lighter-yellow);
+}
+
+.popular-items-container h2,
+.popular-brands-container h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark-greyblue);
+}
+
+.popular-items-list,
+.popular-brands-list {
+  list-style: none;
+}
+
+.popular-item,
+.popular-brand-item {
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-lighter-grey);
+}
+
+.popular-item-title {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.price-container {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popular-item-old-price {
+  text-decoration: line-through;
+  color: var(--basic-darker-grey);
+}
+
+.popular-item-button {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.popular-item-options {
+  background-color: var(--basic-white);
+}
+
+.popular-item-options a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.option-buy {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+}
+
+.option-buy:hover {
+  background-color: var(--basic-light-green);
+}
+
+.option-buy:focus,
+.option-buy:active {
+  background-color: var(--basic-dark-green);
+}
+
+.option-bookmark {
+  color: var(--basic-dark-greyblue);
+  border: 3px solid var(--basic-green);
+}
+
+.option-bookmark:hover {
+  border: 3px solid var(--basic-dark-greyblue);
+}
+
+.option-bookmark:focus,
+.option-bookmark:active {
+  border: 3px solid var(--basic-dark-greyblue);
+  opacity: 0.5;
 }
