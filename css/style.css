@@ -465,6 +465,35 @@ img {
   font-size: 18px;
 }
 
+/* Inner page */
+
+.page-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark-greyblue);
+  background-color: var(--basic-lighter-greyblue);
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.breadcrumbs-current {
+  color: var(--basic-black);
+}
+
 /* Main footer */
 
 .main-footer {
