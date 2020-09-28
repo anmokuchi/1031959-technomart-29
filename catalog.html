@@ -8,37 +8,43 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="https://via.placeholder.com/108x18.png/EE3643/FFFFFF/" width="108" height="18" alt="Логотип магазина «Техномарт»">
-      </a>
-      <!-- Здесь будет форма/инпут поиска -->
-      <a href="blank.html">Закладки: 0</a>
-      <a href="blank.html">Корзина: 10</a>
-      <a href="blank.html">Оформить заказ</a>
-      <section>
-        <h2>О нас</h2>
+  <body class="page-body">
+    <header class="main-header">
+      <div class="user-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="https://via.placeholder.com/108x18.png/EE3643/FFFFFF/" width="108" height="18" alt="Логотип магазина «Техномарт»">
+        </a>
+        <!-- Здесь будет форма/инпут поиска -->
+        <a class="bookmark-link" href="blank.html">Закладки: 0</a>
+        <a class="cart-link cart-full" href="blank.html">Корзина: 10</a>
+        <a class="order-link" href="blank.html">Оформить заказ</a>
+      </div>
+      <section class="main-header-about">
+        <h2 class="visually-hidden">О нас</h2>
         <i>Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта</i>
       </section>
-      <section>
-        <h2>Контактная информация</h2>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <section class="main-header-contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
       </section>
-      <section>
-        <h2>Личный кабинет</h2>
-        <p>Равшан Джамшутович</p>
-        <a href="blank.html">Выйти</a>
-        <ul>
-          <li><a href="blank.html">Мои заказы</a></li>
-          <li><a href="blank.html">Личный кабинет</a></li>
-        </ul>
+      <section class="main-header-account">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <div class="profile-container">
+          <div class="user-container">
+            <a class="username-link" href="blank.html">Равшан Джамшутович</a>
+            <a class="logout-link" href="blank.html">Выйти</a>
+          </div>
+          <ul class="profile-links">
+            <li><a class="profile-link" href="blank.html">Мои заказы</a></li>
+            <li><a class="profile-link" href="blank.html">Личный кабинет</a></li>
+          </ul>
+        </div>
       </section>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="page-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="blank.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>

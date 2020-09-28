@@ -112,6 +112,36 @@ img {
   color: var(--basic-grey);
 }
 
+.profile-links {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.profile-link {
+  color: var(--basic-dark-greyblue);
+}
+
+.profile-link:hover {
+  color: var(--basic-red);
+}
+
+.profile-container a:focus,
+.profile-container a:active {
+  outline: none;
+  color: var(--basic-grey);
+}
+
+.user-container {
+  background-color: var(--basic-white);
+}
+
+.user-container a {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
 /* Header navigation */
 
 .main-navigation {
@@ -164,6 +194,11 @@ img {
   outline: none;
   background-color: var(--special-extradark-greyblue);
   color: var(--basic-transparent-white);
+}
+
+.cart-full,
+.bookmark-full {
+  background-color: var(--basic-red);
 }
 
 /* Tag */
