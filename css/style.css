@@ -119,11 +119,11 @@ img {
   line-height: 18px;
 }
 
-.profile-link {
+.profile-links a {
   color: var(--basic-dark-greyblue);
 }
 
-.profile-link:hover {
+.profile-links a:hover {
   color: var(--basic-red);
 }
 
@@ -555,6 +555,38 @@ img {
 .sort-link-active {
   color: var(--basic-red);
   border: none;
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-light-grey);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border: 1px solid var(--basic-grey);
+}
+
+.pagination-item a:active {
+  border: 1px solid var(--basic-red);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: 1px solid var(--basic-red);
 }
 
 /* Main footer */
