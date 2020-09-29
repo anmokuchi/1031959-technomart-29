@@ -74,6 +74,14 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
 }
 
+.main-header-logo {
+  background-color: var(--basic-red);
+}
+
+.main-header-logo:active {
+  background-color: var(--basic-darker-red);
+}
+
 .main-header-about i {
   font-size: 16px;
   line-height: 23px;
