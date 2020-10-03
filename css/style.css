@@ -384,8 +384,16 @@ img {
 
 /* Popular items, catalog items & brands */
 
+.popular-items,
+.popular-brands {
+  margin-bottom: 70px;
+}
+
 .popular-items-container,
 .popular-brands-container {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   background-color: var(--basic-lighter-yellow);
 }
 
@@ -403,6 +411,20 @@ img {
 .popular-brands-list,
 .catalog-list {
   list-style: none;
+  padding: 0;
+}
+
+.popular-items-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  gap: 20px;
+}
+
+.popular-brands-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 145px 145px;
+  gap: 20px;
 }
 
 .popular-item,
@@ -424,6 +446,12 @@ img {
 .popular-brand-item:active {
   box-shadow: 0 4px 20px var(--basic-transparent-dark-black);
   opacity: 0.5;
+}
+
+.popular-brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popular-item-title,
