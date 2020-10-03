@@ -528,18 +528,37 @@ img {
 
 .services {
   background-color: var(--basic-extralight-greyblue);
+  margin-bottom: 70px;
 }
 
-.services h2 {
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 60px;
+}
+
+.services-about {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 65px;
+}
+
+.services-about h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .services-list {
   list-style: none;
+  padding: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .service-button {
@@ -570,6 +589,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-dark-greyblue);
+  margin: 0;
 }
 
 /* Company & contacts */
