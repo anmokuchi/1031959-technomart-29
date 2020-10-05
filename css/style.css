@@ -103,7 +103,7 @@ img {
   background-color: var(--basic-darker-red);
 }
 
-.header-info-container {
+.header-info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
@@ -194,7 +194,7 @@ img {
   background-color: var(--basic-darker-greyblue);
 }
 
-.user-navigation-container {
+.user-navigation-grid {
   display: grid;
   grid-template-columns: 220px 1fr max-content max-content max-content;
   width: 940px;
@@ -206,7 +206,7 @@ img {
   list-style: none;
 }
 
-.user-navigation-container a,
+.user-navigation-grid a,
 .page-navigation a {
   font-size: 18px;
   color: var(--basic-white);
