@@ -420,11 +420,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px 15px 25px 30px;
   background-color: var(--basic-lighter-yellow);
 }
 
 .popular-items-container h2,
 .popular-brands-container h2 {
+  margin: 0;
+  max-width: 670px;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
