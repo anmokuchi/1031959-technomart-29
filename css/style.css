@@ -139,7 +139,15 @@ img {
   justify-self: end;
 }
 
+.authorization-container {
+  display: flex;
+  width: 281px;
+}
+
 .authorization-container a {
+  flex-grow: 1;
+  text-align: center;
+  padding: 14px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -153,6 +161,10 @@ img {
 
 .authorization-container a:active {
   color: var(--basic-grey);
+}
+
+.login-link {
+  margin-right: 10px;
 }
 
 .profile-links {
@@ -204,12 +216,25 @@ img {
 
 .page-navigation {
   list-style: none;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-navigation-grid a,
 .page-navigation a {
   font-size: 18px;
   color: var(--basic-white);
+}
+
+.page-navigation li {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.page-navigation a {
+  display: block;
+  padding: 20px;
 }
 
 .page-navigation a:hover,
@@ -392,8 +417,9 @@ img {
 .popular-items-container,
 .popular-brands-container {
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--basic-lighter-yellow);
 }
 
