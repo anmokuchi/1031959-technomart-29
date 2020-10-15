@@ -97,6 +97,7 @@ img {
 
 .main-header-logo {
   background-color: var(--basic-red);
+  width: 220px;
 }
 
 .main-header-logo:active {
@@ -206,12 +207,20 @@ img {
   background-color: var(--basic-darker-greyblue);
 }
 
-.user-navigation-grid {
+/* .user-navigation-grid {
   display: grid;
   grid-template-columns: 220px 1fr max-content max-content max-content;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+} */
+
+.user-navigation {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 42px;
 }
 
 .page-navigation {
@@ -221,7 +230,7 @@ img {
   flex-wrap: wrap;
 }
 
-.user-navigation-grid a,
+.user-navigation a,
 .page-navigation a {
   font-size: 18px;
   color: var(--basic-white);
@@ -234,7 +243,7 @@ img {
 
 .page-navigation a {
   display: block;
-  padding: 20px;
+  padding: 18px 20px;
 }
 
 .page-navigation a:hover,
