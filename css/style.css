@@ -848,23 +848,22 @@ img {
 .footer-promo-links {
   list-style: none;
   padding: 0;
-  text-align: right;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .footer-navigation-links {
-  width: 600px;
+  width: 612px;
 }
 
 .footer-promo-links {
-  width: 585px;
+  width: 586px;
 }
 
 .footer-navigation-links li,
 .footer-promo-links li {
-  flex-grow: 1;
+  margin-left: 60px;
 }
 
 .footer-navigation-links a {
