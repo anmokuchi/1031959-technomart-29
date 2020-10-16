@@ -117,7 +117,7 @@ img {
   margin-bottom: 30px;
 }
 
-.main-header-about p {
+.main-header-about-text {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -127,9 +127,10 @@ img {
 
 .main-header-contacts {
   text-align: center;
+  justify-self: center;
 }
 
-.main-header-contacts p {
+.main-header-contacts-address {
   font-size: 14px;
   color: var(--basic-dark-greyblue);
 }
@@ -440,8 +441,8 @@ img {
   background-color: var(--basic-lighter-yellow);
 }
 
-.popular-items-container h2,
-.popular-brands-container h2 {
+.popular-items-title,
+.popular-brands-title {
   margin: 0;
   max-width: 670px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -624,7 +625,7 @@ img {
   grid-column-end: 3;
 }
 
-.services-about h2 {
+.services-about-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -660,7 +661,7 @@ img {
   color: var(--basic-dark-greyblue);
 }
 
-.delivery h3 {
+.delivery-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
