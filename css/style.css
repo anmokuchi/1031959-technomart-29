@@ -888,21 +888,15 @@ img {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .footer-navigation-links {
-  width: 612px;
+  width: 546px;
 }
 
 .footer-promo-links {
-  width: 586px;
-}
-
-.footer-navigation-links li,
-.footer-promo-links li {
-  margin-left: 60px;
+  width: 523px;
 }
 
 .footer-navigation-links a {
@@ -949,6 +943,7 @@ img {
 
 .footer-social ul {
   list-style: none;
+  padding: 0;
 }
 
 .social-button {
