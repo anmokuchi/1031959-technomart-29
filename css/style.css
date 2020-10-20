@@ -109,12 +109,21 @@ img {
 }
 
 .main-header-logo {
-  background-color: var(--basic-red);
+  position: absolute;
   width: 220px;
+  height: 47px;
+  text-align: center;
+  background-color: var(--basic-red);
+  box-shadow: inset 0 -5px 0 var(--basic-transparent-light-black);
 }
 
 .main-header-logo:active {
   background-color: var(--basic-darker-red);
+}
+
+.main-header-logo-img {
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
 
 .header-info-grid {
@@ -233,8 +242,9 @@ img {
 /* Header navigation */
 
 .main-navigation {
-  background-color: var(--basic-dark-greyblue);
   margin-bottom: 60px;
+  background-color: var(--basic-dark-greyblue);
+  box-shadow: inset 0 -5px 0 var(--basic-darker-greyblue);
 }
 
 .main-header-bar {
@@ -250,6 +260,7 @@ img {
 } */
 
 .user-navigation {
+  position: relative;
   width: 940px;
   margin: 0 auto;
   display: flex;
