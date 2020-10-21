@@ -175,11 +175,19 @@ img {
   background-color: var(--basic-white);
 }
 
-.search-form-input:focus + .search-form-icon {
+.search-form-input:focus + .search-form-icon,
+.search-form-input:-webkit-autofill + .search-form-icon,
+.search-form-input:-webkit-autofill:hover + .search-form-icon,
+.search-form-input:-webkit-autofill:focus + .search-form-icon,
+.search-form-input:-webkit-autofill:active + .search-form-icon {
   opacity: 1;
 }
 
-.search-form-input:focus + .search-form-icon path {
+.search-form-input:focus + .search-form-icon path,
+.search-form-input:-webkit-autofill + .search-form-icon path,
+.search-form-input:-webkit-autofill:hover + .search-form-icon path,
+.search-form-input:-webkit-autofill:focus + .search-form-icon path,
+.search-form-input:-webkit-autofill:active + .search-form-icon path {
   fill: var(--basic-red);
 }
 
