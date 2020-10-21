@@ -507,23 +507,39 @@ img {
 
 .offer-item {
   position: relative;
-  background-color: var(--special-dark-yellow);
+  padding: 20px 23px;
   overflow: hidden;
+  background-color: var(--special-dark-yellow);
+  background-repeat: no-repeat;
 }
 
-.offer-item:nth-child(2) {
+.offer-item-materials {
+  background-image: url("../img/offer-materials.svg");
+  background-position: 213px 31px;
+}
+.offer-item-tool {
   background-color: var(--special-blue);
+  background-image: url("../img/offer-tool.svg");
+  background-position: 194px 34px;
 }
-
-.offer-item:nth-child(3) {
+.offer-item-equipment {
   background-color: var(--special-purple);
+  background-image: url("../img/offer-equipment.svg");
+  background-position: 191px 31px;
 }
-
-.offer-item:nth-child(4) {
+.offer-item-discount {
   background-color: var(--special-green);
+  background-image: url("../img/offer-discount.svg");
+  background-position: 196px 26px;
+}
+.offer-item-delivery {
+  background-image: url("../img/offer-delivery.svg");
+  background-position: 191px 32px;
 }
 
-.offer-item h3 {
+.offer-item-title {
+  margin: 0;
+  margin-bottom: 14px;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -532,9 +548,14 @@ img {
 }
 
 .offer-item-button {
+  display: block;
+  width: 135px;
+  padding: 10px 15px;
+  box-sizing: border-box;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-transparent-light-white);
@@ -597,6 +618,10 @@ img {
 /* Button */
 
 .button {
+  display: block;
+  width: 192px;
+  padding: 11px 15px 9px;
+  box-sizing: border-box;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
