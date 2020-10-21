@@ -323,12 +323,27 @@ img {
 }
 
 .header-phone {
+  position: relative;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-  padding: 5px 0;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 16px;
   color: var(--basic-red);
   border: 3px solid var(--basic-white);
+}
+
+.header-phone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 36px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-header-account {
