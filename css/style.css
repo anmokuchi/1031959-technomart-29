@@ -351,6 +351,7 @@ img {
 }
 
 .authorization-container {
+  position: relative;
   display: flex;
   width: 281px;
 }
@@ -358,7 +359,8 @@ img {
 .authorization-container a {
   flex-grow: 1;
   text-align: center;
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -376,6 +378,22 @@ img {
 
 .login-link {
   margin-right: 10px;
+  padding-left: 25px;
+}
+
+.login-link-icon {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+
+.authorization-container a:hover + .login-link-icon path,
+.authorization-container a:focus + .login-link-icon path {
+  fill: var(--basic-greyblue);
+}
+
+.authorization-container a:active + .login-link-icon path {
+  fill: var(--basic-grey);
 }
 
 .profile-container {
