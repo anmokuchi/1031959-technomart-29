@@ -211,20 +211,19 @@ img {
 
 .user-navigation-grid a,
 .page-navigation a {
-  display: block;
   text-align: center;
   font-size: 18px;
   color: var(--basic-white);
 }
 
 .user-navigation-grid a:not(.main-header-logo) {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-right: 16px;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .order-link {
-  padding-left: 19px;
   background-color: var(--basic-green);
 }
 
@@ -233,19 +232,12 @@ img {
   background-color: var(--basic-light-green);
 }
 
-.bookmark-link,
-.cart-link {
-  position: relative;
-  padding-left: 30px;
-}
-
 .bookmark-link::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  left: 20px;
+  display: block;
   width: 14px;
   height: 16px;
+  margin-right: 9px;
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -254,11 +246,10 @@ img {
 
 .cart-link::before {
   content: "";
-  position: absolute;
-  top: 13px;
-  left: 20px;
+  display: block;
   width: 15px;
   height: 15px;
+  margin-right: 8px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -432,6 +423,7 @@ img {
 }
 
 .page-navigation a {
+  display: block;
   padding: 16px 20px 20px;
 }
 
