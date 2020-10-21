@@ -474,6 +474,12 @@ img {
 
 .tag-new {
   position: absolute;
+  top: 0;
+  right: 0;
+  width: 99px;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 5px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -481,6 +487,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  transform: rotate(45deg) translate(25px, -12px);
 }
 /* Offers */
 
@@ -491,6 +498,7 @@ img {
 .offers-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: grid;
   gap: 20px;
   grid-template-columns: 300px 300px 300px;
@@ -498,7 +506,9 @@ img {
 }
 
 .offer-item {
+  position: relative;
   background-color: var(--special-dark-yellow);
+  overflow: hidden;
 }
 
 .offer-item:nth-child(2) {
@@ -659,8 +669,10 @@ img {
 .popular-item,
 .popular-brand-item,
 .catalog-item {
+  position: relative;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-lighter-grey);
+  overflow: hidden;
 }
 
 .popular-item:hover,
