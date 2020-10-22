@@ -471,6 +471,33 @@ img {
   color: var(--basic-transparent-white);
 }
 
+/* Button */
+
+.button {
+  display: block;
+  width: 192px;
+  padding: 11px 15px 9px;
+  box-sizing: border-box;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-dark-red);
+}
+
+.button:active {
+  background-color: var(--basic-darker-red);
+}
+
 /* Tag */
 
 .tag-new {
@@ -582,31 +609,52 @@ img {
 }
 
 .offers-slider-content {
+  position: relative;
+  width: 620px;
   height: 266px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   background-color: var(--basic-grey);
 }
 
-.offers-slider-image {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+.offers-slider-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.offers-slide {
+  display: none;
+}
+
+.offers-slide-current {
+  display: block;
+}
+
+.offers-slider-item {
+  position: relative;
+}
+
+.offers-slider-item .button {
+  position: absolute;
+  left: 24px;
+  bottom: 27px;
 }
 
 .offers-slider-title {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  position: absolute;
+  width: 100%;
+  padding-top: 23px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  box-sizing: border-box;
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
   background-color: var(--basic-transparent-black);
 }
 
-.offers-slider-title h4 {
+.offers-slider-title h3 {
+  margin: 0;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -614,34 +662,68 @@ img {
 }
 
 .offers-slider-title p {
+  margin: 0;
   font-size: 18px;
 }
 
-/* Button */
-
-.button {
-  display: block;
-  width: 192px;
-  padding: 11px 15px 9px;
+.offers-slider-arrows {
+  position: absolute;
+  bottom: 104px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 20px;
   box-sizing: border-box;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-slider-arrow {
+  padding: 0;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--basic-dark-red);
+.slider-button-next {
+  transform: rotate(180deg);
 }
 
-.button:active {
-  background-color: var(--basic-darker-red);
+.slider-button-back::before,
+.slider-button-next::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 40px;
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.offers-slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  line-height: 10px;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+}
+
+.offers-control-button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.offers-slider-controls .current {
+  background-color: var(--basic-red);
 }
 
 /* Popular items, catalog items & brands */
