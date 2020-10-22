@@ -1028,6 +1028,11 @@ img {
   margin-bottom: 24px;
 }
 
+.index-columns .column {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-company {
   margin: 0;
   margin-bottom: 26px;
@@ -1065,8 +1070,29 @@ img {
   background-color: var(--basic-red);
 }
 
-.about .button {
+.about-button {
   width: 220px;
+  margin-top: auto;
+}
+
+.contacts-info {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contacts-map {
+  max-width: 300px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.contacts-map-image {
+  vertical-align: bottom;
+}
+
+.contacts-button {
+  width: 100%;
+  margin-top: auto;
 }
 
 /* Inner page */
