@@ -10,6 +10,7 @@
   --basic-lighter-yellow: #F9F5F0;
   --basic-light-yellow: #F7F3EC;
   --basic-yellow: #FFD180;
+  --basic-light-red: #FF5357;
   --basic-red: #EE3643;
   --basic-dark-red: #CA2C37;
   --basic-darker-red: #BA2732;
@@ -995,9 +996,6 @@ img {
   grid-template-rows: max-content 1fr;
   column-gap: 20px;
   row-gap: 21px;
-  background-image: url("../img/background-truck.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 
 .services-about {
@@ -1074,9 +1072,40 @@ img {
 
 .services-description {
   padding-top: 46px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
-.delivery-title {
+.services-description-wrapper-1 {
+  background-image: url("../img/background-delivery.png");
+}
+
+.services-description-wrapper-2 {
+  background-image: url("../img/background-guarantee.png");
+}
+
+.services-description-wrapper-3 {
+  background-image: url("../img/background-credit.png");
+}
+
+.services-slider-list {
+  padding: 0;
+  margin: 0;
+  max-width: 315px;
+  list-style: none;
+}
+
+.services-slide {
+  display: none;
+}
+
+.services-slide-current {
+  display: block;
+}
+
+.services-slide-title {
   margin: 0;
   margin-bottom: 30px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1087,8 +1116,18 @@ img {
   color: var(--basic-dark-greyblue);
 }
 
-.delivery-info {
+.services-slide-info {
   margin: 0;
+}
+
+.services-slide-button,
+.services-slide-button:hover,
+.services-slide-button:focus,
+.services-slide-button:active {
+  margin-top: 26px;
+  width: 195px;
+  border-radius: 2px;
+  background-color: var(--basic-light-red);
 }
 
 /* Company & contacts */
