@@ -995,12 +995,17 @@ img {
 }
 
 .delivery-title {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-dark-greyblue);
+}
+
+.delivery-info {
   margin: 0;
 }
 
@@ -1023,9 +1028,45 @@ img {
   margin-bottom: 24px;
 }
 
+.about-company {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.about-shipping {
+  margin: 0;
+  margin-bottom: 1px;
+}
+
+.transport-companies-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
 .transport-company-item {
+  margin-bottom: 12px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
+}
+
+.transport-company-item:last-child {
+  margin-bottom: 0;
+}
+
+.transport-company-item::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: var(--basic-red);
+}
+
+.about .button {
+  width: 220px;
 }
 
 /* Inner page */
@@ -1336,4 +1377,5 @@ img {
 .footer-feedback a:active,
 .footer-developers a:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
