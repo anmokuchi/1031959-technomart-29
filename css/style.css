@@ -39,6 +39,7 @@
   --special-blue: #3BBCE3;
   --special-purple: #DC91D8;
   --special-green: #8ED78F;
+  --special-greyblue: #405069;
   --special-darker-greyblue: #212A3A;
   --special-extradark-greyblue: #161D29;
   --special-lighter-greyblue: #F3F7F9;
@@ -695,12 +696,16 @@ img {
 .popular-item,
 .popular-brand-item,
 .catalog-item {
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-lighter-grey);
+}
+
+.popular-item,
+.catalog-item {
   position: relative;
   display: flex;
   padding-top: 5px;
   padding-bottom: 21px;
-  background-color: var(--basic-white);
-  border: 1px solid var(--basic-lighter-grey);
   overflow: hidden;
 }
 
@@ -794,6 +799,7 @@ img {
   margin-right: 34px;
   margin-top: auto;
   padding: 10px;
+  padding-right: 20px;
   border-radius: 3px;
   color: var(--basic-white);
   background-color: var(--basic-red);
@@ -861,7 +867,7 @@ img {
   left: 30px;
   width: 15px;
   height: 15px;
-  background-image: url(../img/icon-cart.svg);
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -896,16 +902,20 @@ img {
 /* Services */
 
 .services {
-  background-color: var(--basic-extralight-greyblue);
   margin-bottom: 70px;
+  padding-bottom: 4px;
+  background-color: var(--basic-extralight-greyblue);
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: max-content 1fr;
   column-gap: 20px;
-  row-gap: 40px;
+  row-gap: 21px;
+  background-image: url("../img/background-truck.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .services-about {
@@ -923,21 +933,49 @@ img {
   margin-bottom: 25px;
 }
 
-.services-list {
-  list-style: none;
-  padding: 0;
+.services-info {
+  margin: 0;
+}
+
+.services-slider-controls {
+  position: relative;
+  width: 240px;
+  padding-top: 49px;
+  padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
+.services-slider-controls::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 230px;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow-line.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .service-button {
+  padding-top: 14px;
+  padding-right: 22px;
+  padding-bottom: 17px;
+  padding-left: 22px;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  text-align: left;
   color: var(--basic-white);
   background-color: var(--basic-dark-greyblue);
   border: none;
+  border-bottom: 1px solid var(--basic-darker-greyblue);
+  box-shadow: inset 0px 1px 0px var(--special-greyblue);
+  cursor: pointer;
 }
 
 .service-button:hover,
@@ -945,10 +983,15 @@ img {
   background-color: var(--basic-darker-greyblue);
 }
 
-.service-button.disabled,
-.service-button:disabled {
-  background-color: var(--basic-white);
+.services-slider-controls .current {
+  box-shadow: none;
   color: var(--basic-dark-greyblue);
+  background-color: var(--basic-white);
+  border-bottom: 1px solid var(--basic-white);
+}
+
+.services-description {
+  padding-top: 46px;
 }
 
 .delivery-title {
