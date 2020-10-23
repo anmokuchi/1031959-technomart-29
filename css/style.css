@@ -805,8 +805,9 @@ img {
 .popular-items-list,
 .popular-brands-list,
 .catalog-list {
-  list-style: none;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .popular-items-list {
@@ -1289,6 +1290,7 @@ img {
 }
 
 .page-catalog .catalog {
+  margin-bottom: 59px;
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -1297,7 +1299,6 @@ img {
   display: grid;
   grid-template-columns: 220px 220px 220px;
   gap: 20px;
-  margin-bottom: 60px;
 }
 
 /* Breadcrumbs */
@@ -1491,13 +1492,13 @@ img {
 }
 
 .basic-information-title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 64px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 64px;
-  margin-bottom: 25px;
 }
 
 .basic-information-description {
