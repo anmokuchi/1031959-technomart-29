@@ -1397,6 +1397,14 @@ img {
   justify-content: space-between;
 }
 
+.sort-links {
+  width: 354px;
+}
+
+.sort-links-arrows {
+  width: 43px;
+}
+
 .sort-link {
   line-height: 18px;
   text-transform: uppercase;
