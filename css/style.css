@@ -1437,17 +1437,28 @@ img {
 /* Pagination */
 
 .pagination-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  margin-top: 30px;
+  margin: 0;
+  margin-top: 28px;
+  list-style: none;
+  grid-column: 1 / -1;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .pagination-item a {
+  display: block;
+  padding: 10px 15px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 1px solid var(--basic-light-grey);
+  border-radius: 2px;
 }
 
 .pagination-item a:hover,
@@ -1466,6 +1477,10 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: 1px solid var(--basic-red);
+}
+
+.pagination-next a {
+  padding: 10px 31px;
 }
 
 /* Catalog basic information */
