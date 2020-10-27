@@ -1656,6 +1656,10 @@ img {
   list-style: none;
 }
 
+.footer-social li {
+  margin: auto;
+}
+
 .social-button {
   display: block;
   width: 42px;
