@@ -901,6 +901,14 @@ img {
   align-items: center;
 }
 
+.popular-item-image img,
+.catalog-item-image img {
+  max-width: 220px;
+  max-height: 165px;
+  object-fit: contain;
+  background-color: var(--basic-white);
+}
+
 .popular-item-title,
 .catalog-item-title {
   font-size: 18px;
