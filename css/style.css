@@ -828,7 +828,6 @@ img {
 .popular-brands-list {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 145px 145px;
   gap: 20px;
 }
 
@@ -863,9 +862,8 @@ img {
 }
 
 .popular-brand-item {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  height: 145px;
+  box-sizing: border-box;
 }
 
 .popular-brand-link {
