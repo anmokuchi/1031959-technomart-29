@@ -328,12 +328,13 @@ img {
 
 .header-phone {
   position: relative;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 38px;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-  padding-top: 4px;
-  padding-bottom: 5px;
-  padding-left: 28px;
   color: var(--basic-red);
   border: 3px solid var(--basic-white);
 }
@@ -360,29 +361,32 @@ img {
   width: 281px;
 }
 
-.authorization-container a {
+.login-link,
+.register-link {
   flex-grow: 1;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.authorization-container a:hover,
-.authorization-container a:focus {
+.login-link:hover,
+.register-link:hover,
+.login-link:focus,
+.register-link:focus {
   color: var(--basic-red);
 }
 
-.authorization-container a:active {
+.login-link:active,
+.register-link:active {
   color: var(--basic-grey);
 }
 
 .login-link {
   margin-right: 10px;
-  padding-left: 21px;
+  padding-left: 33px;
 }
 
 .login-link-icon {
@@ -391,12 +395,12 @@ img {
   left: 19px;
 }
 
-.authorization-container a:hover + .login-link-icon path,
-.authorization-container a:focus + .login-link-icon path {
+.login-link:hover + .login-link-icon path,
+.login-link:focus + .login-link-icon path {
   fill: var(--basic-greyblue);
 }
 
-.authorization-container a:active + .login-link-icon path {
+.login-link:active + .login-link-icon path {
   fill: var(--basic-grey);
 }
 
@@ -935,6 +939,7 @@ img {
   margin: 0;
   margin-bottom: 13px;
   margin-top: auto;
+  padding: 0 17px;
   text-decoration: line-through;
   color: var(--basic-darker-grey);
 }
