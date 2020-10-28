@@ -1546,7 +1546,7 @@ img {
   display: grid;
   grid-template-columns: 325px 1fr;
   grid-template-rows: 1fr 1fr;
-  padding-bottom: 54px;
+  padding-bottom: 55px;
 }
 
 .footer-contacts {
@@ -1617,7 +1617,7 @@ img {
 /* Footer copyright */
 
 .footer-copyright-container {
-  padding: 37px 0 30px;
+  padding: 35px 0 30px;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -1642,22 +1642,23 @@ img {
 
 .footer-social {
   text-align: center;
-  width: 134px;
   justify-self: center;
 }
 
 .footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: -4px;
+  margin-bottom: -4px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 134px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
+  justify-content: center;
 }
 
 .footer-social li {
-  margin: auto;
+  margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 .social-button {
