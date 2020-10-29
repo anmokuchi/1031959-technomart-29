@@ -1222,11 +1222,6 @@ img {
   margin-bottom: 24px;
 }
 
-.index-columns .column {
-  display: flex;
-  flex-direction: column;
-}
-
 .about-company {
   margin: 0;
   margin-bottom: 26px;
@@ -1266,7 +1261,6 @@ img {
 
 .about-button {
   width: 220px;
-  margin-top: auto;
 }
 
 .contacts-info {
@@ -1286,7 +1280,6 @@ img {
 
 .contacts-button {
   width: 100%;
-  margin-top: auto;
 }
 
 /* Inner page */
