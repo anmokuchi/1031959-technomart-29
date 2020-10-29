@@ -973,6 +973,7 @@ img {
 .catalog-item-options {
   position: absolute;
   width: 220px;
+  max-height: 166px;
   padding-top: 33px;
   padding-right: 44px;
   padding-bottom: 47px;
@@ -991,13 +992,14 @@ img {
   visibility: visible;
 }
 
-.popular-item-options a,
-.catalog-item-options a {
+.option-buy,
+.option-bookmark {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .option-buy {
@@ -1005,6 +1007,7 @@ img {
   margin-bottom: 10px;
   padding: 10px;
   padding-left: 24px;
+  border: none;
   border-radius: 2px;
   color: var(--basic-white);
   background-color: var(--basic-green);
@@ -1038,6 +1041,7 @@ img {
   border-radius: 2px;
   border: 3px solid var(--basic-green);
   color: var(--basic-dark-greyblue);
+  background-color: var(--basic-white);
 }
 
 .option-bookmark:hover,
