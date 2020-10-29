@@ -356,7 +356,6 @@ img {
 }
 
 .authorization-container {
-  position: relative;
   display: flex;
   width: 281px;
 }
@@ -385,22 +384,23 @@ img {
 }
 
 .login-link {
+  position: relative;
   margin-right: 10px;
   padding-left: 33px;
 }
 
-.login-link-icon {
+.login-link svg {
   position: absolute;
   top: 14px;
   left: 19px;
 }
 
-.login-link:hover + .login-link-icon path,
-.login-link:focus + .login-link-icon path {
+.login-link:hover path,
+.login-link:focus path {
   fill: var(--basic-greyblue);
 }
 
-.login-link:active + .login-link-icon path {
+.login-link:active path {
   fill: var(--basic-grey);
 }
 
