@@ -204,15 +204,6 @@ img {
   margin-bottom: 46px;
 }
 
-/* .user-navigation {
-  position: relative;
-  width: 940px;
-  min-height: 42px;
-  margin: 0 auto;
-  margin-bottom: 46px;
-  display: flex;
-} */
-
 .user-navigation-grid a,
 .page-navigation a {
   text-align: center;
@@ -986,9 +977,9 @@ img {
 }
 
 .popular-item:hover .popular-item-options,
-.popular-item:focus .popular-item-options,
+.popular-item:focus-within .popular-item-options,
 .catalog-item:hover .catalog-item-options,
-.catalog-item:focus .catalog-item-options {
+.catalog-item:focus-within .catalog-item-options {
   visibility: visible;
 }
 
