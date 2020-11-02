@@ -96,7 +96,7 @@
           <h2 class="filters-title">Фильтр:</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
-              <legend>Цена:</legend>
+              <legend class="filter-legend-title">Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -106,17 +106,16 @@
                   <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">
-                    <input type="number" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">
-                    — <input type="number" name="max-price" value="30000">
-                  </label>
+                  <label for="min-price" class="visually-hidden">Минимальная цена, от</label>
+                  <input type="number" class="min-price" name="min-price" id="min-price" value="0">
+                  <span class="price-controls-devider">&mdash;</span>
+                  <label for="max-price" class="visually-hidden">Максимальная цена, до</label>
+                  <input type="number" class="max-price" name="max-price" id="max-price" value="30000">
                 </div>
               </div>
             </fieldset>
-            <fieldset>
-              <legend>Производители:</legend>
+            <fieldset class="filter-item">
+              <legend class="filter-legend-title">Производители:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -140,8 +139,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Питание:</legend>
+            <fieldset class="filter-item">
+              <legend class="filter-legend-title">Питание:</legend>
               <ul>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type" value="cordless" id="filter-cordless">

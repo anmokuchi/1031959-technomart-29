@@ -46,6 +46,11 @@
   --special-darker-greyblue: #212A3A;
   --special-extradark-greyblue: #161D29;
   --special-lighter-greyblue: #F3F7F9;
+  --special-grey: #D7DCDE;
+  --special-dark-grey: #ABABAB;
+  --special-extradark-grey: #444444;
+  --special-greyyellow: #E0DDD9;
+  --special-lime-green: #00CA74;
 }
 
 /* Global */
@@ -1372,13 +1377,107 @@ img {
 }
 
 .filters-title {
+  padding: 10px 18px;
+  margin: 0;
+  margin-bottom: 14px;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--basic-light-yellow);
+}
+
+.filter-item {
   margin: 0;
-  padding: 10px 18px;
+  padding: 0;
+  border: none;
+}
+
+.filter-item:not(:last-of-type) {
+  margin-bottom: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--basic-light-grey);
+}
+
+.filter-legend-title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.range-filter {
+  margin-top: 11px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-light-yellow);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--special-grey);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--special-lime-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-dark-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--special-greyyellow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-controls input {
+  width: 95px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-black);
+  background: var(--basic-light-yellow);
+  border: none;
+  border-radius: 5px;
+}
+
+.price-controls-devider {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-extradark-grey);
 }
 
 /* Sort */
