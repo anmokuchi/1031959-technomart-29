@@ -1399,6 +1399,10 @@ img {
   border-bottom: 1px solid var(--basic-light-grey);
 }
 
+.filter-item:last-of-type {
+  margin-bottom: 39px;
+}
+
 .filter-legend-title {
   font-weight: 700;
   font-size: 17px;
@@ -1600,6 +1604,27 @@ img {
 .filter-input:disabled:focus + label {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.filter-button {
+  width: 100%;
+  padding: 9px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-light-grey);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-grey);
+}
+
+.filter-button:active {
+  background-color: var(--basic-white);
+  border: 1px solid var(--basic-red);
 }
 
 /* Sort */
