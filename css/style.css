@@ -1366,6 +1366,11 @@ img {
 
 /* Filters */
 
+.filters {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
 .filters-title {
   font-weight: 400;
   font-size: 13px;
