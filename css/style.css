@@ -1395,7 +1395,7 @@ img {
 
 .filter-item:not(:last-of-type) {
   margin-bottom: 18px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
   border-bottom: 1px solid var(--basic-light-grey);
 }
 
@@ -1434,7 +1434,7 @@ img {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1478,6 +1478,88 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--special-extradark-grey);
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 35px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-legend-brand {
+  margin-bottom: 15px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.filter-input-checkbox:checked + label::before {
+  width: 26px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:hover:checked + label::before,
+.filter-input-checkbox:focus:checked + label::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:disabled:checked + label::before {
+  opacity: 0.3;
+}
+
+.filter-legend-power {
+  margin-bottom: 21px;
+}
+
+.filter-input:focus + label::before {
+  border-color: var(--special);
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-input:disabled + label,
+.filter-input:checked:disabled + label,
+.filter-input:disabled:hover + label,
+.filter-input:disabled:focus + label {
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 /* Sort */
