@@ -1986,10 +1986,9 @@ img {
 
 .modal-contact,
 .modal-cart {
-  top: 50%;
+  top: 120px;
   bottom: auto;
   width: 620px;
-  transform: translateY(-50%);
 }
 
 /* Modal close */
@@ -2143,4 +2142,25 @@ img {
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
