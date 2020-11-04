@@ -46,11 +46,15 @@ contactButton.addEventListener("click", function (evt) {
 contactClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   contactPopup.classList.remove("modal-show");
+  contactPopup.classList.remove("modal-error");
 });
 
 contactForm.addEventListener("submit", function (evt) {
   if (!contactUsername.value || !contactEmail.value || !contactIssue.value) {
     evt.preventDefault();
+    contactPopup.classList.remove("modal-error");
+    contactPopup.offsetWidth = contactPopup.offsetWidth;
+    contactPopup.classList.add("modal-error");
   } else {
     if (isUsernameSupport) {
       localStorage.setItem("username", contactUsername.value);
@@ -66,6 +70,7 @@ window.addEventListener("keydown", function (evt) {
     if (contactPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       contactPopup.classList.remove("modal-show");
+      contactPopup.classList.remove("modal-error");
     }
   }
 });
