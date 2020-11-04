@@ -184,6 +184,19 @@ img {
   background-color: var(--basic-white);
 }
 
+.search-form-input:focus::-webkit-input-placeholder {
+	color: var(--basic-grey);
+}
+
+.search-form-input:focus::-moz-placeholder {
+	color: var(--basic-grey);
+	opacity: 1;
+}
+
+.search-form-input:focus::placeholder {
+  color: var(--basic-grey);
+}
+
 .search-form-input:focus + .search-form-icon,
 .search-form-input:-webkit-autofill + .search-form-icon,
 .search-form-input:-webkit-autofill:hover + .search-form-icon,
