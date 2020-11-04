@@ -2035,16 +2035,19 @@ img {
   box-sizing: border-box;
 }
 
-.contact-item input::-webkit-input-placeholder {
+.contact-item input::-webkit-input-placeholder,
+.contact-item textarea::-webkit-input-placeholder {
 	color: var(--basic-darker-grey);
 }
 
-.contact-item input::-moz-placeholder {
+.contact-item input::-moz-placeholder,
+.contact-item textarea::-moz-placeholder {
 	color: var(--basic-darker-grey);
 	opacity: 1;
 }
 
-.contact-item input::placeholder {
+.contact-item input::placeholder,
+.contact-item textarea::placeholder {
   color: var(--basic-darker-grey);
 }
 
@@ -2121,4 +2124,10 @@ img {
 .button-continue:active {
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+/* Modal show */
+
+.modal-show {
+  display: block;
 }
