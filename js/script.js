@@ -8,28 +8,60 @@ const offersControls = document.querySelectorAll(".offers-control-button");
 let offersIndex = 1;
 let offersCount = offersSlides.length;
 
-buttonPrevious.addEventListener("click", function() {
-  offersSlides[offersIndex].classList.remove('offers-slide-current');
-  offersControls[offersIndex].classList.remove('current');
+buttonPrevious.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  offersSlides[offersIndex].classList.remove("offers-slide-current");
+  offersControls[offersIndex].classList.remove("current");
   offersIndex--;
-  if (offersIndex < 0){
+  if (offersIndex < 0) {
     offersIndex = offersCount-1;
   }
 
-  offersSlides[offersIndex].classList.add('offers-slide-current');
-  offersControls[offersIndex].classList.add('current');
+  offersSlides[offersIndex].classList.add("offers-slide-current");
+  offersControls[offersIndex].classList.add("current");
 });
 
-buttonNext.addEventListener('click', function() {
-  offersSlides[offersIndex].classList.remove('offers-slide-current');
-  offersControls[offersIndex].classList.remove('current');
+buttonNext.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  offersSlides[offersIndex].classList.remove("offers-slide-current");
+  offersControls[offersIndex].classList.remove("current");
   offersIndex++;
-  if (offersIndex > offersCount-1){
+  if (offersIndex > offersCount-1) {
       offersIndex = 0;
   }
 
-  offersSlides[offersIndex].classList.add('offers-slide-current');
-  offersControls[offersIndex].classList.add('current');
+  offersSlides[offersIndex].classList.add("offers-slide-current");
+  offersControls[offersIndex].classList.add("current");
+});
+
+// Services slider
+
+const serviceButtons = document.querySelectorAll(".service-button");
+const serviceSlides = document.querySelectorAll(".services-slide");
+const servicesWrapper = document.querySelector(".services-description");
+
+serviceButtons.forEach(function (item, i) {
+  item.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    serviceButtons.forEach(function (button) {
+      button.classList.remove("current");
+    });
+
+    serviceSlides.forEach(function (slide) {
+      slide.classList.remove("services-slide-current");
+    });
+
+    servicesWrapper.classList.forEach(function (className) {
+      if (className.startsWith("services-description-wrapper")) {
+        servicesWrapper.classList.remove(className);
+      }
+    });
+
+    item.classList.add("current");
+    serviceSlides[i].classList.add("services-slide-current");
+    servicesWrapper.classList.add("services-description-wrapper-" + [i+1]);
+  });
 });
 
 // Modal contact
