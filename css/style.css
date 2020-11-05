@@ -636,7 +636,6 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
