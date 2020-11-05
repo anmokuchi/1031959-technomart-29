@@ -53,4 +53,3 @@ offersControls.forEach(function (item, k) {
     offersIndex = k;
   });
 });
-
