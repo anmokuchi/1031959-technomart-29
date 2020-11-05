@@ -10,6 +10,7 @@ let offersCount = offersSlides.length;
 
 buttonPrevious.addEventListener("click", function(evt) {
   evt.preventDefault();
+
   offersSlides[offersIndex].classList.remove("offers-slide-current");
   offersControls[offersIndex].classList.remove("current");
   offersIndex--;
@@ -23,6 +24,7 @@ buttonPrevious.addEventListener("click", function(evt) {
 
 buttonNext.addEventListener("click", function(evt) {
   evt.preventDefault();
+
   offersSlides[offersIndex].classList.remove("offers-slide-current");
   offersControls[offersIndex].classList.remove("current");
   offersIndex++;
@@ -34,7 +36,7 @@ buttonNext.addEventListener("click", function(evt) {
   offersControls[offersIndex].classList.add("current");
 });
 
-offersControls.forEach(function (item, i) {
+offersControls.forEach(function (item, k) {
   item.addEventListener("click", function(evt) {
     evt.preventDefault();
 
@@ -47,7 +49,8 @@ offersControls.forEach(function (item, i) {
     });
 
     item.classList.add("current");
-    offersSlides[i].classList.add("offers-slide-current");
+    offersSlides[k].classList.add("offers-slide-current");
+    offersIndex = k;
   });
 });
 
