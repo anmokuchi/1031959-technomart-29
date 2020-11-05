@@ -33,3 +33,21 @@ buttonNext.addEventListener("click", function(evt) {
   offersSlides[offersIndex].classList.add("offers-slide-current");
   offersControls[offersIndex].classList.add("current");
 });
+
+offersControls.forEach(function (item, i) {
+  item.addEventListener("click", function(evt) {
+    evt.preventDefault();
+
+    offersControls.forEach(function (control) {
+      control.classList.remove("current");
+    });
+
+    offersSlides.forEach(function (slide) {
+      slide.classList.remove("offers-slide-current");
+    });
+
+    item.classList.add("current");
+    offersSlides[i].classList.add("offers-slide-current");
+  });
+});
+
