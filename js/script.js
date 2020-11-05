@@ -1,3 +1,37 @@
+// Offers slider
+
+const buttonPrevious = document.querySelector(".slider-button-back");
+const buttonNext = document.querySelector(".slider-button-next");
+const offersSlides = document.querySelectorAll(".offers-slide");
+const offersControls = document.querySelectorAll(".offers-control-button");
+
+let offersIndex = 1;
+let offersCount = offersSlides.length;
+
+buttonPrevious.addEventListener("click", function() {
+  offersSlides[offersIndex].classList.remove('offers-slide-current');
+  offersControls[offersIndex].classList.remove('current');
+  offersIndex--;
+  if (offersIndex < 0){
+    offersIndex = offersCount-1;
+  }
+
+  offersSlides[offersIndex].classList.add('offers-slide-current');
+  offersControls[offersIndex].classList.add('current');
+});
+
+buttonNext.addEventListener('click', function() {
+  offersSlides[offersIndex].classList.remove('offers-slide-current');
+  offersControls[offersIndex].classList.remove('current');
+  offersIndex++;
+  if (offersIndex > offersCount-1){
+      offersIndex = 0;
+  }
+
+  offersSlides[offersIndex].classList.add('offers-slide-current');
+  offersControls[offersIndex].classList.add('current');
+});
+
 // Modal contact
 
 const contactButton = document.querySelector(".contacts-button");
@@ -8,22 +42,15 @@ const contactUsername = contactPopup.querySelector(".contact-name");
 const contactEmail = contactPopup.querySelector(".contact-email");
 const contactIssue = contactPopup.querySelector(".contact-issue");
 
-let isUsernameSupport = true;
+let isStorageSupport = true;
 let username = "";
-
-try {
-  username = localStorage.getItem("username");
-} catch (err) {
-  isUsernameSupport = false;
-}
-
-let isEmailSupport = true;
 let email = "";
 
 try {
+  username = localStorage.getItem("username");
   email = localStorage.getItem("email");
 } catch (err) {
-  isEmailSupport = false;
+  isStorageSupport = false;
 }
 
 contactButton.addEventListener("click", function (evt) {
@@ -58,10 +85,8 @@ contactForm.addEventListener("submit", function (evt) {
     contactPopup.offsetWidth = contactPopup.offsetWidth;
     contactPopup.classList.add("modal-error");
   } else {
-    if (isUsernameSupport) {
+    if (isStorageSupport) {
       localStorage.setItem("username", contactUsername.value);
-    }
-    if (isEmailSupport) {
       localStorage.setItem("email", contactEmail.value);
     }
   }
