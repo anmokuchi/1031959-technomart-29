@@ -1773,7 +1773,7 @@ img {
   border-radius: 5px;
 }
 
-.price-controls-devider {
+.price-controls-divider {
   font-size: 16px;
   line-height: 18px;
   color: var(--special-extradark-grey);
@@ -1893,7 +1893,6 @@ img {
 
 .filter-input:focus + .filter-option-label::before {
   border-color: var(--special);
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -2412,19 +2411,23 @@ img {
 	opacity: 1;
 }
 
-.contact-item-input::-webkit-input-placeholder, .contact-item-textarea::-webkit-input-placeholder {
+.contact-item-input::-webkit-input-placeholder,
+.contact-item-textarea::-webkit-input-placeholder {
   color: var(--basic-darker-grey);
 }
 
-.contact-item-input::-moz-placeholder, .contact-item-textarea::-moz-placeholder {
+.contact-item-input::-moz-placeholder,
+.contact-item-textarea::-moz-placeholder {
   color: var(--basic-darker-grey);
 }
 
-.contact-item-input:-ms-input-placeholder, .contact-item-textarea:-ms-input-placeholder {
+.contact-item-input:-ms-input-placeholder,
+.contact-item-textarea:-ms-input-placeholder {
   color: var(--basic-darker-grey);
 }
 
-.contact-item-input::-ms-input-placeholder, .contact-item-textarea::-ms-input-placeholder {
+.contact-item-input::-ms-input-placeholder,
+.contact-item-textarea::-ms-input-placeholder {
   color: var(--basic-darker-grey);
 }
 
